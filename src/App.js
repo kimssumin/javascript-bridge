@@ -1,11 +1,8 @@
-const MissionUtils = require('@woowacourse/mission-utils');
-const { CONSOLELINE } = require('./utils/Constants');
-const InputView = require('./view/InputView');
+const controller = require('./Controller');
 
 class App {
   play() {
-    MissionUtils.Console.print(CONSOLELINE.START_GAME);
-    InputView.readBridgeSize();
+    controller.startGame();
   }
 }
 
